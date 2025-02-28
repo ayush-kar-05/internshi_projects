@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to ShopNow!</h1>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#cart" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <section id="products" class="product-list">
+        <h2>Our Products</h2>
+        <div class="products-container">
+            <!-- Product List Will Go Here -->
+            <div class="product-item">
+                <img src="images2/images-1.webp" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>$999.99</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images2/61L1ItFgFHL.jpg" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <p>$699.99</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images2/239033_0_aq6dfy.png" alt="Headphone">
+                <h3>Headphone</h3>
+                <p>$199.99</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images2/Hammerglidebluetoothcallingsmartwatch_1.webp" alt="SmartWatch">
+                <h3>SmartWatch</h3>
+                <p>$249.99</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images2/images.jpeg" alt="Tablet">
+                <h3>Tablet</h3>
+                <p>$499.99</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="recommendations" class="product-list">
+        <h2>You May Also Like</h2>
+        <div class="products-container">
+            <!-- Recommended Products Will Go Here -->
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div id="cart-total">
+            <strong>Total: $<span id="total-price">0.00</span></strong>
+        </div>
+        <button id="checkout">Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ShopNow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
